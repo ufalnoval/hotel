@@ -1,0 +1,22 @@
+<html>
+<head>
+<title>Kalkulator Sederhana</title>
+<script src="script.js"></script>
+</head>
+<body>
+<div align="center">
+<form name="form1" action="#">
+<p>masukan angka 1  <input type="text" name="x" /></p>
+<p>masukan angka 2  <input type="text" name="y" /></p>
+<p>hasil penjumlahan  <input type="text" name="hasil" disabled="true" /></p>
+<p>pilih<select name="opt"></p>
+ <option value="tambah">tambah</option>
+ <option value="kurang">kurang</option>
+ <option value="kali">kali</option>
+ <option value="bagi">bagi</option>
+</select>
+<input type="button" value="=" onClick="hitung()" />
+<input type="button" value="CLEAR" onClick="resetForm()" />
+</form>
+</body>
+</html>

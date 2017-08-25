@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!-- saved from url=(0078)https://s.codepen.io/duniailkom/fullembedgrid/xVdyQg?type=embed&animations=run -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <link rel="shortcut icon" type="image/x-icon" href="https://production-assets.codepen.io/assets/favicon/favicon-8ea04875e70c4b0bb41da869e81236e54394d63638a1ef12fa558a4a835f1164.ico">
+  <link rel="mask-icon" type="" href="https://production-assets.codepen.io/assets/favicon/logo-pin-f2d2b6d2c61838f7e76325261b7195c27224080bc099486ddd6dccb469b8e8e6.svg" color="#111">
+  <title>CodePen - Cara Menghapus Elemen HTML dengan method remove() jQuery</title>
+  
+  
+  
+  
+  
+  <script>
+  window.console = window.console || function(t) {};
+</script>
+
+  
+  
+  <script>
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage("resize", "*");
+  }
+</script>
+
+</head>
+
+<body translate="no">
+
+    <button id="hapus_html">Hapus HTML</button>
+  <button id="hapus_css">Hapus CSS</button>   
+  <button id="hapus_php">Hapus PHP</button>
+  <button id="hapus_all">Hapus Semua!</button>   
+  <ul id="belajar">
+    <li id="list_html">Belajar HTML di Duniailkom</li>
+    <li id="list_css">Belajar CSS di Duniailkom</li>
+    <li id="list_php">Belajar PHP di Duniailkom</li>
+    <li id="list_js">Belajar JavaScript di Duniailkom</li>
+    <li id="list_mysql">Belajar MySQL di Duniailkom</li>
+  </ul>
+    <script src="./stopExecutionOnTimeout-b2a7b3fe212eaa732349046d8416e00a9dec26eb7fd347590fbced3ab38af52e.js.download"></script>
+
+  <script src="./jquery.min.js(1).download"></script>
+
+    <script>
+       $(document).ready(function() {
+      $("#hapus_html").click(function() {
+        $("#list_html").remove();
+      })
+      
+      $("#hapus_css").click(function() {
+        $("#list_css").remove();
+      })
+      
+      $("#hapus_php").click(function() {
+        $("#list_php").remove();
+      })
+      
+      $("#hapus_all").click(function() {
+        $("#belajar").remove();
+      })
+   });
+  //# sourceURL=pen.js
+  </script>
+
+  
+  
+
+
+
+ </body></html>

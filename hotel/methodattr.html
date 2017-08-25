@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+  <title>belajar jquery duniakom</title>
+<script src="jquery-2.1.4.js"></script>
+<script>
+  $(document).ready(function() {
+    $("#tambah").click(function(){
+      $("#link_jquery").attr("href",
+        "file:///C:/Users/FADHIL/Documents/hotel/kalkulator1.html");
+      $("#link_jquery").attr("title","belajar ngoding");
+    })
+  });
+</script>
+</head>
+<body>
+<h2>Belajar ngoding</h2>
+<p>
+  <a id="link_jquery">belajar aja</a>
+</p>
+<button id="tambah">tambah</button>
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Belajar jQuery Duniailkom</title>
+  <script src="jquery-2.1.4.js"></script>
+  <script>
+    $(document).ready(function() {
+ 
+      $("div").click(function() {
+        var lebar_box = $(this).width();
+        var tinggi_box = $(this).height();
+        $(this).width(lebar_box + 10);
+        $(this).height(tinggi_box + 10);
+        $(this).css("background-color","red");
+      })
+       
+    });
+   </script>
+   <style>
+   div {
+     width: 150px;
+     height: 30px;
+     background-color: pink;
+     border: 2px solid black;
+     margin-bottom: 10px;
+     cursor: pointer;
+   }
+   </style>
+</head>
+<body>
+  <h2>Belajar jQuery Duniailkom</h2>
+  <div id="box1"></div>
+  <div id="box2"></div>
+  <div id="box3"></div>
+</body>
+</html>

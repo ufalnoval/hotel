@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Belajar jQuery Duniailkom</title>
+<script src="jquery-2.1.4.js"></script>
+<style>
+#paragraf {
+   width:600px;
+   height:80px;
+   background-color:pink;
+   line-height:80px;
+   text-align:center;
+   font-size:30px;
+}
+</style>
+ 
+<script>
+   $( document ).ready(function() {
+     $("#tombol").click(function() {    
+       $("p").css( "color", "red" );
+       $("#belajar").css( "color", "green" );
+       $(".warna").css( "color", "blue" );
+       $("#test.saja").css( "color", "yellow" );
+       $("div p.warna").css( "color", "pink" );
+     });
+     $( "#paragraf" ).click(function() {    
+       $( "#paragraf" ).css( "color", "green" );
+     });
+  
+     $( "#paragraf" ).mouseover(function() {    
+       $( "#paragraf" ).css( "background-color", "ready" );
+     });
+  
+     $( "#paragraf" ).mouseout(function() {    
+       $( "#paragraf" ).css( "background-color", "grey" );
+     });
+  
+     $( "#paragraf" ).dblclick(function() {    
+       $( "#paragraf" ).css( "border", "solid 2px black" );
+     });
+   });
+   </script>
+ 
+</head>
+<body>
+ 
+<p>
+   Sebuah paragraf tanpa atribut apapun
+</p>
+<p id="belajar">
+   Sebuah paragraf dengan id = "belajar"
+</p>
+<p class="warna">
+   Sebuah paragraf dengan class = "warna"
+</p>
+<p id="test" class="saja">
+   Sebuah paragraf dengan id="test" class="saja"
+</p>
+<div>
+   <p class="warna">
+     Sebuah paragraf tanpa atribut apapun
+   </p>
+</div>
+ 
+<button id="tombol">Action</button>
+<p id="paragraf">Click Me</p>
+ 
+</body>
+</html>

@@ -1,0 +1,44 @@
+<html>
+<head>
+<title>Kalkulator2</title>
+<link rel="stylesheet" type="text/css" href="angka.css">
+<script src="jquery-2.1.4.js"></script> 
+</head>
+<body>
+
+ <form name="Calc">
+  <table border=2>
+	<tr>
+	  <td>
+		<input type="text" name="Input" size="30" placeholder="masukan angka" onkeypress="return hanyaAngka(event)"><br>
+	  </td>
+	</tr>
+	<tr>
+	 <td>
+		<input type="button" id="angka" name="satu"   value="1" OnClick="Calc.Input.value = '1'" >
+		<input type="button" id="angka" name="dua"   value="2" OnClick="Calc.Input.value += '2'" >
+		<input type="button" id="angka" name="tiga"   value="3" OnClick="Calc.Input.value += '3'" >
+		<br>
+		<input type="button" id="angka" name="empat"  value="4" OnClick="Calc.Input.value += '4'">
+		<input type="button" id="angka" name="lima"  value="5" OnClick="Calc.Input.value += '5'" >
+		<input type="button" id="angka" name="enam"   value="6" OnClick="Calc.Input.value += '6'" >
+		<br>
+		<input type="button" id="angka" name="tujuh" value="7" OnClick="Calc.Input.value += '7'" >
+		<input type="button" id="angka" name="delapan" value="8" OnClick="Calc.Input.value += '8'" >
+		<input type="button" id="angka" name="sembilan"  value="9" OnClick="Calc.Input.value += '9'" >
+		<br>
+		<input type="button" id="angka" name="nol"  value="0" OnClick="Calc.Input.value += '0'">
+		<input type="button" id="angka" name="tambah"   value="+" OnClick="Calc.Input.value += '+'">
+		<input type="button" id="angka" name="kurang" value="-" OnClick="Calc.Input.value += ' - '">
+		<br>
+		<input type="button" id="angka" name="kali" value="*" OnClick="Calc.Input.value += ' * '">
+
+		<input type="button" id="angka" name="bagi"   value="/" OnClick="Calc.Input.value += ' / '">
+		<input type="button" id="angka" name="hasil"  value="=" OnClick="Calc.Input.value = eval(Calc.Input.value)">
+		<input type="button" name="clear" value="Clear" OnClick="Calc.Input.value = ''">
+	 </td>
+	</tr>
+  </table>
+ </form>
+</body>
+</html>
